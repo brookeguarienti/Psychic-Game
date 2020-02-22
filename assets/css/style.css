@@ -1,0 +1,40 @@
+/* Jumotron */
+.jumbotron {
+	background-color: #FFA07A;
+	color: gray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Body */ 
+body {
+	background-image: url('../images/norwegian_rose.png');
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 500px;
+    margin-top: 80px;
+}
+
+.content-wrapper {
+	border: solid;
+    border-width: 1px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px 10px 20px;
+}
+
+.row {
+    margin: auto 10px;
+}
+
+
+// Create variables that hold references to the places in the HTML where we want to display things.
+var directionsText = document.getElementById("directions-text");
+var userChoiceText = document.getElementById("userchoice-text");
+var computerChoiceText = document.getElementById("computerchoice-text");
+var winsText = document.getElementById("wins-text");
+var lossesText = document.getElementById("losses-text");
+var tiesText = document.getElementById("ties-text");
