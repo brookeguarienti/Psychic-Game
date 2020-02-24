@@ -20,11 +20,11 @@ var guessesMadeText = document.getElementById("guesses-made-text");
  var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
  function countGuessesLeft() {
-	document.querySelector("#guesses-left-text").innerHTML = "Guesses Left: " + guessesLeft;
+	document.querySelector("#guesses-left-text").innerHTML = guessesLeft;
 }
 
 function farUserGuesses() {
-	document.querySelector("#guesses-made-text").innerHTML = "Your Guesses so far: " + guessesMade.join(' ');
+	document.querySelector("#guesses-made-text").innerHTML = guessesMade.join(' ');
 }
 
 countGuessesLeft();
