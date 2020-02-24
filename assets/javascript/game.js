@@ -10,7 +10,6 @@ var userGuess = null;
 
 
 // Create variables that hold references to the places in the HTML where we want to display things.
-// var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesLeftText = document.getElementById("guesses-left-text");
@@ -19,16 +18,20 @@ var guessesMadeText = document.getElementById("guesses-made-text");
  // Randomly chooses a choice from the options array. This is the Computer's guess.
  var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
+ // Function to count GuessesLeft and update guesses left 
  function countGuessesLeft() {
 	document.querySelector("#guesses-left-text").innerHTML = guessesLeft;
 }
 
+// Function that 
 function farUserGuesses() {
 	document.querySelector("#guesses-made-text").innerHTML = guessesMade.join(' ');
 }
 
+// Calling function 
 countGuessesLeft();
 
+// Creating variable to restart the game
 var restart = function() {
 	guessesLeft = 10;
 	guessesMade = [];
