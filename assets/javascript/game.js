@@ -25,7 +25,7 @@ var guessesMadeText = document.getElementById("guesses-made-text");
 
 // Function that 
 function farUserGuesses() {
-	document.querySelector("#guesses-made-text").innerHTML = guessesMade.join(' ');
+	document.querySelector("#guesses-made-text").innerHTML = guessesMade.join(', ');
 }
 
 // Calling function 
